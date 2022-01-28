@@ -3,8 +3,10 @@
 :root {
   --slider: 0px;
   --primary: #ffab44;
-  --background-primary: #fff2e1;
+  --background-primary: #FAF1E6;
+  --secondary: #01937C;
   --radius: 10px;
+  --font-size: 16px;
 }
 
 * {
@@ -18,10 +20,15 @@ button:hover {
   cursor: pointer;
 }
 
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /* ===== NAVBAR ===== */
 
 .navbar {
-  padding: 20px 20px;
+  padding: 20px 0px;
   background-color: var(--background-primary);
   display: flex;
   justify-content: center;
@@ -29,6 +36,7 @@ button:hover {
   flex-direction: column;
   position: fixed;
   width: 100%;
+  max-width: 1400px;
 }
 .menus {
   display: flex;
@@ -40,7 +48,7 @@ button:hover {
   content: "";
   height: 2.5px;
   width: 75px;
-  background-color: tomato;
+  background-color: var(--secondary);
   position: absolute;
   z-index: 9;
   margin-left: var(--slider);
@@ -87,10 +95,46 @@ button:hover {
 }
 /* ===== NAVBAR END ===== */
 
-.border{
-  border: 8px solid #666;
+
+
+/* ===== HOME ===== */
+.home {
+  min-height: 100vh;
+  background-color: var(--background-primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-container {
+  height: 100% !important;
+  padding: 0px 10px 20px 120px;
+  width: 60%;
+}
+.my-name {
+  font-size: 64px;
+  font-weight: bolder;
+  color: var(--secondary);
+  margin-left: -2px;
+}
+.profile {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.profile-detail {
+  font-size: 24px;
+  color: var(--primary);
+  transition: 1s;
+  position: absolute;
+  overflow: hidden;
+  max-width: 200px;
+  white-space: nowrap;
+}
+.profile-detail-left {
+  text-indent: -200px;
 }
 
-.hero {
-  height: 100px;
-}
+
+
+/* ===== HOME END ===== */

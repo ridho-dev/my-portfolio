@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Home from './components/Home';
 
 function App() {
   window.onresize = function () {
@@ -11,7 +11,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar></Navbar>
-      <Hero></Hero>
+      <Home></Home>
     </React.Fragment>
   );
 }
