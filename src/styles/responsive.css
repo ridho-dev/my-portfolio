@@ -1,3 +1,38 @@
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+  .who-image {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-container p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .who-image {
+    width: 250px;
+  }
+  .who-social {
+    flex-basis: 10%;
+    flex-grow: 1;
+  }
+  .who-profile {
+    flex-basis: 90%;
+    flex-grow: 5;
+  }
+  .who-profile-container {
+    margin-top: 15px;
+  }
+  .who-profile-detail {
+    min-width: 100px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: transparent;
@@ -49,12 +84,27 @@
     font-size: 16px;
   }
   .my-name {
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 900;
   }
   .profile, .profile-detail {
     font-size: 24px;
     margin-bottom: 10px;
+  }
+  .who-content {
+    flex-direction: column;
+  }
+  .who-profile {
+    margin-top: 40px;
+  }
+  .who-image {
+    width: 300px;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .who-profile-detail {
+    min-width: 120px;
   }
 }
 
@@ -67,13 +117,29 @@
   .home-text {
     font-size: 16px;
   }
+  .container {
+    width: 85%;
+  }
   .my-name {
     font-size: 48px;
     font-weight: 900;
   }
-  .profile, .profile-detail {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .who-image {
+    width: 250px;
+  }
+  .who-profile {
+    padding-left: 0;
+  }
+  .who-profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-colon {
+    display: none;
+  }
+  .main-title {
+    font-size: 50px;
   }
 }
 

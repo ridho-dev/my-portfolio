@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Who from './components/Who';
 
 function App() {
   window.onresize = function () {
@@ -12,6 +13,7 @@ function App() {
     <React.Fragment>
       <Navbar></Navbar>
       <Home></Home>
+      <Who></Who>
     </React.Fragment>
   );
 }

@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="menus" id="menus">
         {
           menus.map((menu, index) => {
-            return <a href={`#${index}`} id={`menu${index}`} key={index}><button className="menu" onClick={() => moveSlider(index)}>{menu}</button></a>
+            return <a href={`#${menu}`} id={`menu${index}`} key={index}><button className="menu" onClick={() => moveSlider(index)}>{menu}</button></a>
           })
         }
       </div>

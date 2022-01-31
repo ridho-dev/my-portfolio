@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
 :root {
   --slider: 0px;
   --primary: #ffab44;
+  --primary-hover: #ff8c00;
   --background-primary: #FAF1E6;
   --secondary: #01937C;
   --radius: 10px;
   --font-size: 16px;
+  --lato: 'Lato', sans-serif;
 }
 
 * {
@@ -25,11 +28,15 @@ body {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== NAVBAR ===== */
 
 .navbar {
   padding: 20px 0px;
-  background-color: var(--background-primary);
+  background-color: transparent; /* temporary */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,22 +105,29 @@ body {
 
 
 /* ===== HOME ===== */
-.home {
+.home, .who {
   min-height: 100vh;
-  background-color: var(--background-primary);
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
+.home {
+  background-color: var(--background-primary);
+}
 .home-container {
   height: 100% !important;
-  padding: 0px 10px 20px 120px;
-  width: 60%;
+  padding: 20px 0px;
+  width: 70%;
+  margin: 50px auto;
+}
+.home-container p {
+  width: 70%;
 }
 .my-name {
   font-size: 64px;
   font-weight: bolder;
+  font-family: var(--lato);
   color: var(--secondary);
   margin-left: -2px;
 }
@@ -135,6 +149,88 @@ body {
   text-indent: -200px;
 }
 
-
-
 /* ===== HOME END ===== */
+
+
+
+
+/* ===== WHO ===== */
+
+.who {
+  background-color: white;
+}
+.main-title {
+  font-size: 64px;
+  font-weight: bolder;
+  font-family: var(--lato);
+  color: var(--secondary);
+  margin-left: -2px;
+}
+.container {
+  width: 70%;
+  margin: 50px auto;
+}
+.who-content {
+  display: flex;
+  height: fit-content;
+  padding: 40px 0;
+  width: 100%;
+}
+.who-social {
+  flex-basis: 40%;
+}
+.who-profile {
+  flex-basis: 60%;
+  padding-left: 20px;
+}
+.who-image {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  gap: 10px;
+}
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.who-profile-container {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.profile-title-header {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+.who-profile-detail {
+  min-width: 120px;
+}
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid var(--primary);
+  background-color: white;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.social-btn:hover{
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+}
+/* ===== WHO END ===== */
+

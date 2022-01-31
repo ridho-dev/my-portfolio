@@ -22,7 +22,7 @@ const Home = () => {
     }, 3000)
   }
 
-  return <div className="home">
+  return <div className="home" id="Home">
     <div className="home-container">
       <p className="home-text">Hi There! My name is</p>
       <p className="my-name">Ridho Pardede</p>
