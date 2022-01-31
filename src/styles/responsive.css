@@ -2,28 +2,25 @@
   .container {
     width: 80%;
   }
+  /* WHO */
   .who-image {
     width: 280px;
   }
+  /* WHO END */
 }
 
 @media only screen and (max-width: 1024px) {
+  /* HOME */
   .home-container p {
     width: 80%;
   }
+  /* HOME END */
 }
 
 @media only screen and (max-width: 900px) {
+  /* WHO */
   .who-image {
     width: 250px;
-  }
-  .who-social {
-    flex-basis: 10%;
-    flex-grow: 1;
-  }
-  .who-profile {
-    flex-basis: 90%;
-    flex-grow: 5;
   }
   .who-profile-container {
     margin-top: 15px;
@@ -31,9 +28,14 @@
   .who-profile-detail {
     min-width: 100px;
   }
+  /* WHO END */
 }
 
 @media only screen and (max-width: 768px) {
+  .main-title {
+    text-align: center;
+  }
+  /* NAVBAR */
   .navbar {
     background-color: transparent;
     align-items: flex-end;
@@ -75,6 +77,9 @@
     margin-right: 20px;
     margin-top: 20px;
   }
+  /* NAVBAR END */
+
+  /* HOME */
   .home-container {
     padding: 10px 10px;
     width: 85%;
@@ -87,10 +92,14 @@
     font-size: 64px;
     font-weight: 900;
   }
-  .profile, .profile-detail {
+  .home-profile, .home-profile-detail {
     font-size: 24px;
     margin-bottom: 10px;
   }
+  /* HOME END */
+
+
+  /* WHO */
   .who-content {
     flex-direction: column;
   }
@@ -100,15 +109,20 @@
   .who-image {
     width: 300px;
   }
-  .main-title {
-    text-align: center;
-  }
   .who-profile-detail {
     min-width: 120px;
   }
+  /* WHO END */
 }
 
 @media only screen and (max-width: 480px) {
+  .container {
+    width: 85%;
+  }
+  .main-title {
+    font-size: 50px;
+  }
+  /* HOME */
   .home-container {
     padding: 10px 10px;
     width: 85%;
@@ -117,13 +131,14 @@
   .home-text {
     font-size: 16px;
   }
-  .container {
-    width: 85%;
-  }
   .my-name {
     font-size: 48px;
     font-weight: 900;
   }
+  /* HOME END */
+
+  
+  /* WHO */
   .who-image {
     width: 250px;
   }
@@ -138,12 +153,12 @@
   .profile-colon {
     display: none;
   }
-  .main-title {
-    font-size: 50px;
-  }
+  
+  /* WHO END */
 }
 
 @media only screen and (max-width: 320px) {
+  /* HOME */
   .home-text {
     font-size: 14px;
   }
@@ -151,8 +166,9 @@
     font-size: 42px;
     font-weight: 900;
   }
-  .profile, .profile-detail {
+  .home-profile, .home-profile-detail {
     font-size: 20px;
     margin-bottom: 10px;
   }
+  /* HOME END */
 }

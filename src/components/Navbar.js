@@ -36,7 +36,6 @@ const Navbar = () => {
           })
         }
       </div>
-      <div className="kotak"></div>
     </nav>
   );
 };

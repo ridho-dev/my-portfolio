@@ -4,7 +4,7 @@ import MyProfile from '../assets/data/MyProfile';
 
 const Who = () => {
   return (
-    <div className="who" id="Who">
+    <div className="who page" id="Who">
       <div className="container">
         <div>
           <p className="main-title">Who Am I?</p>

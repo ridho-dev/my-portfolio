@@ -22,13 +22,13 @@ const Home = () => {
     }, 3000)
   }
 
-  return <div className="home" id="Home">
+  return <div className="home page" id="Home">
     <div className="home-container">
       <p className="home-text">Hi There! My name is</p>
       <p className="my-name">Ridho Pardede</p>
-      <p className="profile">I'm a&nbsp;
+      <p className="home-profile">I'm a&nbsp;
         <span
-          className="profile-detail"
+          className="home-profile-detail"
           ref={profileDetail}
           onChange={changeProfile()}
         >
